@@ -1,0 +1,12 @@
+name: Build and deploy JAR app, create docker image and upload to docker hub  Web 
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: AlexandruIonescu8/GithubActions/.github/workflows/maven-reusable.yml@master
+   
